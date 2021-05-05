@@ -7,10 +7,5 @@ export default {
         file: "bundle.js",
         format: "cjs",
     },
-    plugins: [
-        nodeResolve(),
-        commonjs({
-            esmExternals: true,
-        }),
-    ],
+    plugins: [nodeResolve(), commonjs()],
 }
